@@ -1,16 +1,24 @@
+import { useState } from "react";
 import './App.css';
 
 function App() {
+  const [contador, setContador] = useState(0);
+
+
+  function soma() {
+    setContador(contador + 5);
+  }
+
+  function subtrai() {
+    setContador(contador - 5);
+  }
+
+
   return (
-    <div className="App">
-      <h1>Lista de Compras</h1>
-      <ul>
-        <li>Pão</li>
-        <li>Banana</li>
-        <li>Milk Shake de Doce de Leite</li>
-        <li>Nutella</li>
-        <li>Sorvete</li>
-      </ul>
+    <div>
+      <h1>{contador}</h1>
+      <button onClick={soma}>+</button>
+      <button onClick={subtrai}>-</button>
     </div>
   );
 }

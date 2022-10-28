@@ -4,3 +4,23 @@
     box-sizing: border-box;
     list-style: none;
 }
+
+h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #333;
+    margin-left: 24.5px;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 300;
+    cursor: pointer;
+    outline: none;
+}
